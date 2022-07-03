@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <title>Showcase</title>
+</head>
+
+<body>
+    <header>
+        <div class="ghost"></div>
+        <nav class="main-nav">
+            <a href="#">Models</a>
+            <a href="#">Technology</a>
+            <h2>Aston Martin</h2>
+            <a href="#">About</a>
+            <a href="#">History</a>
+        </nav>
+        <div class="menu-icon" onclick="change()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+        </div>
+    </header>
+    
+<!--virtual nav-->
+
+<div id="virtual-nav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Models</a>
+      <a href="#">Technology<a>
+      <a href="#">About</a>
+      <a href="#">History</a>
+    </div>
+  </div>
+
+    <section class="main">
+
+        <video class="background-video"  loop muted poster="img">
+            <source src="video/VantageVideo.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h3>The art of</h3>
+            <h2 class="bigger">Performance</h1>
+        </div>
+
+    </section>
+
+    <div class="transition"></div>
+    
+
+    <div class="grid-container">
+
+        <div 
+        class="grid-item"
+        style="background-image:url(img/Vantage.jpg)"
+        >
+    <h2>Vantage</h2>
+    <div class="line"></div>
+    </div>
+        <div 
+        class="grid-item"
+        style="background-image:url(img/DBX.jpg)"
+        >
+    <h2>DBX</h2>
+    <div class="line"></div>
+    </div>
+        <div 
+        class="grid-item"
+        style="background-image:url(img/DB11.jpg)"
+        >
+    <h2>DB11</h2>
+    <div class="line"></div>
+    </div>
+    <div 
+        class="grid-item"
+        style="background-image:url(img/VantageRoadster.jpg)"
+        >
+    <h2>Vantage Roadster</h2>
+    <div class="line"></div>
+    </div>
+    <div 
+        class="grid-item wide"
+        style="background-image:url(img/DBS.jpg)"
+        >
+    <h2>DBS</h2>
+    <div class="line"></div>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
