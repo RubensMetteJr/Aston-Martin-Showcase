@@ -40,7 +40,7 @@
 
     <section class="main">
 
-        <video class="background-video"  loop muted poster="img">
+        <video id="myVideo" class="background-video" autoplay loop muted>
             <source src="video/VantageVideo.mp4" type="video/mp4">
         </video>
 
@@ -48,6 +48,12 @@
             <h3>The art of</h3>
             <h2 class="bigger">Performance</h1>
         </div>
+
+        <div 
+        class="sound"
+        style="background-image: url(img/icons8-sound-20.png) ;"
+        onclick="toggleMute()">
+    </div>
 
     </section>
 
