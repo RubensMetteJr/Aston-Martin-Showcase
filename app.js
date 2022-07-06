@@ -59,10 +59,37 @@ function closeNav() {
     }
 }
 
-function toggleMute() {
+/*
+##     ##  #######  ##       ##     ## ##     ## ######## 
+##     ## ##     ## ##       ##     ## ###   ### ##       
+##     ## ##     ## ##       ##     ## #### #### ##       
+##     ## ##     ## ##       ##     ## ## ### ## ######   
+ ##   ##  ##     ## ##       ##     ## ##     ## ##       
+  ## ##   ##     ## ##       ##     ## ##     ## ##       
+   ###     #######  ########  #######  ##     ## ########
+*/
 
-    var video=document.getElementById("myVideo");
-  
+let toggled = true
+function toggleMute() {
+    
+
+    let video = document.getElementById("myVideo");
     video.muted = !video.muted;
+
+    let sound = document.querySelector(".sound");
+
+    if(toggled === true){
+    sound.style.backgroundImage = "url(img/icons8-sound-20.png)";
+    toggled = false;
+    return;
+    }
+
+    if(toggled === false){
+         sound.style.backgroundImage = "url(img/icons8-mute-20.png)";
+         toggled = true;
+         return;
+     }
+  
+   
   
   }
